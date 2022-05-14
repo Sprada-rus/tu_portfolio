@@ -22,15 +22,6 @@ function updateContent(obj, id){
 
 document.getElementById('nav_bar').addEventListener('click', event => {
     if (event.target.nodeName.toLowerCase() === 'input'){
-        document.getElementById('content').src = event.target.id + '.html';
-        
-        
-        fetch(document.getElementById('json_file').src).then(res => res.json())
-            .then(profile => {
-                setTimeout(() => updateContent(profile, event.target.id), 10);
-            })
-            .catch(e => {
-                console.log(e);
-            });
+        document.getElementById('content').src = event.target.id + '.html';    
     }
 });

@@ -26,6 +26,7 @@ p{
     align-items: center;
     text-transform: uppercase;
     padding: 20px 0px;
+    cursor: default;
 }
 
 .header img{
@@ -95,7 +96,7 @@ iframe#content{
 }
 
 #student-photo{
-    width: 200px;
+    width: 125px;
     border-radius: 20%;
     border: #bdbdbd 1px solid;
 }
@@ -121,3 +122,29 @@ iframe#content{
     margin-bottom: 16px;
 }
 
+.frame-content #description{
+    text-align: justify;
+}
+
+.links{
+    list-style-type: none;
+}
+
+.links i{
+    width: 35px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14pt;
+    margin-left: 16px;
+}
+.links li{
+    width: auto;
+}
+
+.links li:hover a,
+.links li:hover i::before{
+    color: #91806a;
+}
