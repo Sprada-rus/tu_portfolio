@@ -148,3 +148,51 @@ iframe#content{
 .links li:hover i::before{
     color: #91806a;
 }
+
+@media (min-width:1100px) and (max-width:1199px){
+    .header span{
+        margin-left: 0;
+        flex-grow: 0;
+    }
+
+    .header{
+        justify-content: space-around;
+
+    }
+}
+
+@media (min-width:700px) and (max-width:1099px) {
+    .header span{
+        margin-left: 0;
+        flex-grow: 0;
+    }
+
+    .header{
+        justify-content: space-around;
+
+    }
+}
+
+@media (min-width:400px) and (max-width:699px){
+    *{
+        font-size: 18px;
+    }
+    .header span{
+        margin-left: 0;
+        flex-grow: 0;
+        font-size: 40px;
+    }
+    .header img{
+        width: 400px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #nav_bar input[type=radio]+label{
+        font-size: 20px;
+    }
+}
