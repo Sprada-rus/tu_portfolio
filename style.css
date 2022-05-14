@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #b7a284;
+}
+
+p{
+    margin: 0px 0px 16px;
+}
+
+.main{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+.header img{
+    width: 300px;
+}
+
+iframe#content{
+    border: none;
+}
+
+.header span{
+    flex-grow: 1;
+    margin-top: 12px;
+    margin-left: 16%;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(235, 233, 233);
+}
+
+#nav_bar{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 10px 10px;
+}
+
+#nav_bar input[type=radio]{
+    display: none;
+}
+
+#nav_bar input[type=radio]+label{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(235, 233, 233);
+    text-align: center;
+    border: rgb(235, 233, 233) 2px solid;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+    transition: background-color, box-shadow .2s ease-in;
+}
+
+#nav_bar input[type=radio]:active+label{
+    background-color: #91806a;
+}
+
+#nav_bar input[type=radio]:checked+label{
+    background-color: #fff;
+    color: #a7937a;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.profile, .frame-content{
+    padding: 15px;
+    border: 2px #bdbdbd solid;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, .5);
+}
+
+.profile{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#student-photo{
+    width: 200px;
+    border-radius: 20%;
+    border: #bdbdbd 1px solid;
+}
+
+#student-description{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.frame-content .title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18pt;
+    margin-bottom: 16px;
+}
+
+.frame-content #company{
+    text-align: right;
+    margin-right: 16px;
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+

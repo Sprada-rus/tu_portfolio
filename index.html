@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/source/js/loadFrame.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="source/img/tu_logo.svg" alt="">
+            <span>Портфолио</span>
+        </div>
+        <form id="nav_bar">
+                <input type="radio" name="menu" id="profile" checked>
+                <label for="profile">Профиль</label>
+
+                <input type="radio" name="menu" id="work">
+                <label for="work">Где я работаю</label>
+
+                <input type="radio" name="menu" id="other">
+                <label for="other">Другое</label>
+        </form>
+        <iframe id="content" width="100%" frameborder="false" scrolling="no" onload="getHeight(this)" allowTransparency>
+        </iframe>
+    </div>
+
+    <script type="text/json" src="source/profile.json" id="json_file"></script>
+    <script src="source/Js/navigation.js"></script>
+    <script>document.getElementById('profile').click()</script>
+</body>
+</html>
